@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:context=".activity.SystemIntentsAppActivity">
+
+    <LinearLayout
+        android:layout_marginTop="100sp"
+        android:id="@+id/downpg2"
+        android:layout_width="match_parent"
+        android:layout_height="230sp"
+        android:orientation = "vertical"
+        android:layout_marginHorizontal="50sp"
+        android:background="@color/bg"
+        android:backgroundTint="@color/bg2"
+        >
+
+        <Button
+            android:id="@+id/call"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="45sp"
+            android:backgroundTint="@color/purple_700"
+            android:layout_marginTop="20sp"
+            android:onClick="onClickCall"
+            android:text="Позвонить"
+            />
+
+        <Button
+            android:id="@+id/openBrowser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="45sp"
+            android:backgroundTint="@color/purple_700"
+            android:layout_marginTop="20sp"
+            android:onClick="onClickOpenBrowser"
+            android:text="Открыть браузер"
+            />
+
+        <Button
+            android:id="@+id/openMap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="45sp"
+            android:backgroundTint="@color/purple_700"
+            android:layout_marginTop="20sp"
+            android:onClick="onClickOpenMaps"
+            android:text="Открыть карты"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/downpg"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bg2">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="2sp"
+            android:backgroundTint="@color/purple_700"
+            android:text="Главная"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/purple_700"
+            android:text="Любимая книга"
+            android:onClick="goFavoriteBook"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="2sp"
+            android:backgroundTint="@color/purple_700"
+            android:text="Система" />
+    </LinearLayout>
+
+</RelativeLayout>

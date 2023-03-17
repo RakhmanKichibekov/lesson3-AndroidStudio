@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Layout_time</string>
+    <string name="enter">Добро пожаловать</string>
+    <string name="kabinet">Личный кабинет</string>
+    <string name="enter_button">Войти</string>
+    <string name="home">Главная</string>
+    <string name="contacts">Контакты</string>
+    <string name="Im_begemot">Я бегемот</string>
+    <string name="CountWords">Вывести количество слов</string>
+    <string name="EnterText">Ввод текста</string>
+    <string name="goBack">назад</string>
+    <string name="second_activity">Second Activity</string>
+    <string name="start_new_activity">Start new activity</string>
+    <string name="blog">Блог</string>
+    <string name="Contacts">Контакты</string>
+    <string name="Main">Главная</string>
+    <string name="mirea">Mirea</string>
+    <string name="main2">Main</string>
+    <string name="count_words">count words</string>
+    <string name="time">Time</string>
+    <string name="date">Date</string>
+    <string name="progress">Progress</string>
+    <string name="set_the_time">set the time</string>
+    <string name="set_date">set date</string>
+    <string name="set_progress">set progress</string>
+    <string name="loading">Loading...</string>
+    <string name="loading_icon">loading icon</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

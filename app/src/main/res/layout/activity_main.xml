@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/upper_bg"
+        android:layout_width="match_parent"
+        android:layout_height="110sp"
+        android:background="@color/bg2">
+
+        <TextView
+            android:id="@+id/textStart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="70sp"
+            android:textSize="30sp"
+            android:layout_marginTop="30sp"
+            android:textColor="@color/white"
+            android:text="Добро пожаловать"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/main_box"
+        android:layout_width="match_parent"
+        android:layout_height="250sp"
+        android:layout_below="@id/upper_bg"
+        android:background="@color/white"
+        android:backgroundTint="@color/bg2"
+        android:layout_marginHorizontal="50sp"
+        android:layout_marginTop="-25sp">
+
+        <Button
+            android:id="@+id/go_second_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50sp"
+            android:layout_marginTop="50sp"
+            android:onClick="goSecond"
+            android:backgroundTint="@color/purple_700"
+            android:text="Показать дату и время" />
+
+        <Button
+            android:id="@+id/actionSendButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50sp"
+            android:backgroundTint="@color/purple_700"
+            android:layout_marginTop="110sp"
+            android:onClick="goActionSend"
+            android:text="Action_Send"
+            />
+
+        <Button
+            android:id="@+id/fragmentsButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50sp"
+            android:backgroundTint="@color/purple_700"
+            android:layout_marginTop="160sp"
+            android:onClick="goFragments"
+            android:text="Переход к фрагментам"
+            />
+
+<!--        <Button-->
+<!--            android:id="@+id/dateButton"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginHorizontal="50sp"-->
+<!--            android:backgroundTint="@color/purple_700"-->
+<!--            android:layout_marginTop="160sp"-->
+<!--            android:onClick="goActionSend2"-->
+<!--            android:text="Action_Send2"-->
+<!--            />-->
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/downpg"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bg2">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="2sp"
+            android:backgroundTint="@color/purple_700"
+            android:text="Главная"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/purple_700"
+            android:text="Любимая книга"
+            android:onClick="goFavoriteBook"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="2sp"
+            android:backgroundTint="@color/purple_700"
+            android:onClick="goSystem"
+            android:text="Система" />
+    </LinearLayout>
+</RelativeLayout>
